@@ -1,7 +1,7 @@
 * text=auto
 
-*.assembly linguist-detectable=false
-*.pawn linguist-detectable=false
-*.pascal linguist-detectable=false
+*.asm linguist-detectable=false
+*.pwn linguist-detectable=false
+*.pas linguist-detectable=false
 *.java linguist-detectable=false
 *.aidl linguist-detectable=false
