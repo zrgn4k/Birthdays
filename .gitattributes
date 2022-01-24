@@ -9,5 +9,6 @@
 *.pas linguist-detectable=false
 *.java linguist-detectable=false
 *.aidl linguist-detectable=false
+*.m linguist-detectable=false
 
 *.cs linguist-detectable=true
