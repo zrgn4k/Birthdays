@@ -1,7 +1,13 @@
 * text=auto
 
 *.asm linguist-detectable=false
+*.s linguist-detectable=false
 *.pwn linguist-detectable=false
+*.p linguist-detectable=false
+*.inc linguist-detectable=false
+*.p linguist-detectable=false
 *.pas linguist-detectable=false
 *.java linguist-detectable=false
 *.aidl linguist-detectable=false
+
+*.cs linguist-detectable=true
