@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Birthdays.MainPage">
+
+    <StackLayout x:Name="st">
+        <Frame BackgroundColor="SeaGreen" Padding="40,40,10,10" CornerRadius="0">
+            <StackLayout Orientation="Horizontal" Spacing="50">
+                <Label Text="Birthdays" VerticalTextAlignment="Center" TextColor="LightSeaGreen" FontSize="30"/>
+                <Button Command="{Binding ShowPopCommand}" Text="Add Birthday" BackgroundColor="DarkCyan" TextColor="LightSeaGreen" BorderWidth="2" Padding="20" WidthRequest="160" HeightRequest="70" BorderColor="LightSeaGreen" BorderRadius="35"/>
+            </StackLayout>
+        </Frame>
+        <ListView RowHeight="100" ItemsSource="{Binding BirthdayList}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout Spacing="20" >
+                                    <Label Text="Name:"/>
+                                    <Label Text="{Binding Name}"/>
+                                </StackLayout>
+                                <StackLayout Spacing="20">
+                                    <Label Text="Age:"/>
+                                    <Label Text="{Binding Age}"/>
+                                </StackLayout>
+                                <StackLayout Spacing="20">
+                                    <Label Text="Birthday:"/>
+                                    <Label Text="{Binding CurrentDate}"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
