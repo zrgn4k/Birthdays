@@ -1,0 +1,7 @@
+* text=auto
+
+*.assembly linguist-detectable=false
+*.pawn linguist-detectable=false
+*.pascal linguist-detectable=false
+*.java linguist-detectable=false
+*.aidl linguist-detectable=false
