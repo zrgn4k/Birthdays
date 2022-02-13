@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Xml.Serialization;
@@ -16,6 +17,7 @@ namespace Birthdays.ViewModel
         private DateTime _date;
         private string _name;
         public Command GoBackCommand { get; }
+        public XmlSerializer xs = new XmlSerializer(typeof(ObservableCollection<BirthdayDate>));
         public event PropertyChangedEventHandler PropertyChanged;
 
         public ObservableCollection<BirthdayDate> BirthdayList
@@ -65,7 +67,7 @@ namespace Birthdays.ViewModel
 
         private void GoBack()
         {
-            if(string.IsNullOrEmpty(_name))
+            if (string.IsNullOrEmpty(_name))
             {
                 Application.Current.MainPage.DisplayAlert("Write name!", "Name field is empty", "OK");
             }
@@ -74,6 +76,14 @@ namespace Birthdays.ViewModel
             {
                 BirthdayList.Add(new BirthdayDate(_date, _name));
                 Application.Current.MainPage.Navigation.PopAsync();
+
+                var documents = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+                var filename = Path.Combine(documents, "BirthdaysFile.xml");
+                Debug.WriteLine(documents);
+                using (var sw = new StreamWriter(File.Open(filename,FileMode.OpenOrCreate,FileAccess.ReadWrite)))
+                {
+                    xs.Serialize(sw, birthdayList);
+                }
             }
         }
     }

@@ -24,9 +24,9 @@ namespace Birthdays.ViewModel
             }
         }
 
-        public MainWindowViewModel()
+        public MainWindowViewModel(ObservableCollection<BirthdayDate> DeserializedList)
         {
-            _birthdayList = new ObservableCollection<BirthdayDate>();
+            _birthdayList = DeserializedList;
             ShowPopCommand = new Command(ShowPop);
         }
 

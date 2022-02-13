@@ -7,15 +7,10 @@ namespace Birthdays
 {
     public partial class MainPage : ContentPage
     {
-        //public MainPage(ref ObservableCollection<BirthdayDate> col)
-        //{
-        //    InitializeComponent();
-        //    BindingContext = new MainWindowViewModel(ref col);
-        //}
-        public MainPage()
+        public MainPage(ObservableCollection<BirthdayDate> collection)
         {
             InitializeComponent();
-            BindingContext = new MainWindowViewModel();
+            BindingContext = new MainWindowViewModel(collection);
         }
     }
 }

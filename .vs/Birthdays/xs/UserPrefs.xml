@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{8117E1C3-CA86-40C4-9242-A6DE8F6F0724}|Default">
+  <MonoDevelop.Ide.ItemProperties.Birthdays.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C6681799-79B1-483B-A526-8DF44E4634B4" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Birthdays/Model/BirthdayDate.cs">
+    <Files>
+      <File FileName="Birthdays/App.xaml.cs" Line="29" Column="1" />
+      <File FileName="Birthdays/ViewModel/AddBirthdayViewModel.cs" Line="77" Column="50" />
+      <File FileName="Birthdays/View/MainPage.xaml.cs" Line="9" Column="6" />
+      <File FileName="Birthdays/View/AddBirthdayPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Birthdays/Model/BirthdayDate.cs" Line="32" Column="14" />
+      <File FileName="Birthdays/ViewModel/MainWindowViewModel.cs" Line="1" Column="1" />
+      <File FileName="Birthdays/View/AddBirthdayPage.xaml" Line="11" Column="40" />
+      <File FileName="Birthdays/View/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="Birthdays.iOS/Main.cs" Line="18" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Birthdays" expanded="True">
+            <Node name="Birthdays" expanded="True">
+              <Node name="Model" expanded="True">
+                <Node name="BirthdayDate.cs" selected="True" />
+              </Node>
+              <Node name="View" expanded="True">
+                <Node name="AddBirthdayPage.xaml" expanded="True" />
+                <Node name="MainPage.xaml" expanded="True" />
+              </Node>
+              <Node name="ViewModel" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="Birthdays.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Birthdays.Android PreferredExecutionTarget="Android.pixel_2_q_10_0_-_api_29" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

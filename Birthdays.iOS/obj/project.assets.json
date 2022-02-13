@@ -991,42 +991,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Grey\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/zrgn4k/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Grey\\Desktop\\Birthdays_new\\Birthdays.iOS\\Birthdays.iOS.csproj",
+      "projectUniqueName": "/Users/zrgn4k/Documents/birthdaysgit/Birthdays.iOS/Birthdays.iOS.csproj",
       "projectName": "Birthdays.iOS",
-      "projectPath": "C:\\Users\\Grey\\Desktop\\Birthdays_new\\Birthdays.iOS\\Birthdays.iOS.csproj",
-      "packagesPath": "C:\\Users\\Grey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Grey\\Desktop\\Birthdays_new\\Birthdays.iOS\\obj\\",
+      "projectPath": "/Users/zrgn4k/Documents/birthdaysgit/Birthdays.iOS/Birthdays.iOS.csproj",
+      "packagesPath": "/Users/zrgn4k/.nuget/packages/",
+      "outputPath": "/Users/zrgn4k/Documents/birthdaysgit/Birthdays.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Grey\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/zrgn4k/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Grey\\Desktop\\Birthdays_new\\Birthdays\\Birthdays.csproj": {
-              "projectPath": "C:\\Users\\Grey\\Desktop\\Birthdays_new\\Birthdays\\Birthdays.csproj"
+            "/Users/zrgn4k/Documents/birthdaysgit/Birthdays/Birthdays.csproj": {
+              "projectPath": "/Users/zrgn4k/Documents/birthdaysgit/Birthdays/Birthdays.csproj"
             }
           }
         }

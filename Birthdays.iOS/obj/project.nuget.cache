@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Y8w6a3BN8XxK82tAJTZnYnGcjOZBT+KUS/DDHl5syrmPXcEgerPmBv23wFnH9C88LURzekv4GhsAweBwUMEl+g==",
+  "dgSpecHash": "scvI4fHB94Nur5NUg8xk6ulsroIC8w3RNwnqH/54wNOQkPZsTngpsL8Un6lG1C4iMu4QT8v1ANgnGdfrf1sJ5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Grey\\Desktop\\Birthdays_new\\Birthdays.iOS\\Birthdays.iOS.csproj",
+  "projectFilePath": "/Users/zrgn4k/Documents/birthdaysgit/Birthdays.iOS/Birthdays.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Grey\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "/Users/zrgn4k/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/zrgn4k/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
+    "/Users/zrgn4k/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
   "logs": []
 }
