@@ -13,11 +13,13 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Plugin.LocalNotification" Version="9.2.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="View\" />
     <None Remove="ViewModel\" />
     <None Remove="Model\" />
+    <None Remove="Plugin.LocalNotification" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="View\" />

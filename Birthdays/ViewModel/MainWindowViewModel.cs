@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Birthdays.Model;
@@ -27,7 +28,7 @@ namespace Birthdays.ViewModel
         public MainWindowViewModel(ObservableCollection<BirthdayDate> DeserializedList)
         {
             _birthdayList = DeserializedList;
-            ShowPopCommand = new Command(ShowPop);
+            ShowPopCommand = new Command(OnShowPop);
         }
 
         public void OnPropertyChanged([CallerMemberName]string name = "")
@@ -35,7 +36,7 @@ namespace Birthdays.ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
-        private void ShowPop()
+        private void OnShowPop()
         {
             Application.Current.MainPage.Navigation.PushAsync(new AddBirthdayPage(ref _birthdayList));
         }

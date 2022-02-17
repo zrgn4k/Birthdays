@@ -10,30 +10,35 @@
                 <Button Command="{Binding ShowPopCommand}" Text="Add Birthday" BackgroundColor="DarkCyan" TextColor="LightSeaGreen" BorderWidth="2" Padding="20" WidthRequest="160" HeightRequest="70" BorderColor="LightSeaGreen" BorderRadius="35"/>
             </StackLayout>
         </Frame>
-        <ListView RowHeight="100" ItemsSource="{Binding BirthdayList}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <ViewCell.View>
-                            <StackLayout Orientation="Horizontal">
-                                <StackLayout Spacing="20" >
-                                    <Label Text="Name:"/>
-                                    <Label Text="{Binding Name}"/>
-                                </StackLayout>
-                                <StackLayout Spacing="20">
-                                    <Label Text="Age:"/>
-                                    <Label Text="{Binding Age}"/>
-                                </StackLayout>
-                                <StackLayout Spacing="20">
-                                    <Label Text="Birthday:"/>
-                                    <Label Text="{Binding CurrentDate}"/>
-                                </StackLayout>
-                            </StackLayout>
-                        </ViewCell.View>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            <ListView RowHeight="100" ItemsSource="{Binding BirthdayList}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <SwipeView>
+                                <SwipeView.RightItems>
+                                    <SwipeItems Mode="Reveal">
+                                        <SwipeItem Text="Delete" BackgroundColor="OrangeRed"/>
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+                                    <StackLayout Orientation="Horizontal">
+                                        <StackLayout Spacing="20" >
+                                            <Label Text="Name:"/>
+                                            <Label Text="{Binding Name}"/>
+                                        </StackLayout>
+                                        <StackLayout Spacing="20">
+                                            <Label Text="Age:"/>
+                                            <Label Text="{Binding Age}"/>
+                                        </StackLayout>
+                                        <StackLayout Spacing="20">
+                                            <Label Text="Birthday:"/>
+                                            <Label Text="{Binding CurrentDate}"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                            </SwipeView>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
     </StackLayout>
 
 </ContentPage>

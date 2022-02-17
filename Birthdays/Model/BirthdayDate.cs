@@ -7,10 +7,17 @@ namespace Birthdays.Model
     [Preserve]
     public class BirthdayDate
     {
+        int _id;
         DateTime _date;
         string _currentDate;
         string _name;
         int _age;
+
+        public int Id
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
 
         public string Name
         {
@@ -54,8 +61,9 @@ namespace Birthdays.Model
         {
         }
 
-        public BirthdayDate(DateTime date, string name)
+        public BirthdayDate(DateTime date, string name, int id)
         {
+            _id = id;
             _name = name;
             BirthDateString = date.ToString("dd/MM/yyyy");
         }

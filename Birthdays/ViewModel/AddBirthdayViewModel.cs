@@ -6,6 +6,7 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using System.Xml.Serialization;
 using Birthdays.Model;
+using Plugin.LocalNotification;
 using Xamarin.Forms;
 
 namespace Birthdays.ViewModel
@@ -14,6 +15,8 @@ namespace Birthdays.ViewModel
     {
         private ObservableCollection<BirthdayDate> birthdayList;
         private readonly DateTime _dateMax = DateTime.Now;
+        private int _id = 0;
+        private TimeSpan isLeap;
         private DateTime _date;
         private string _name;
         public Command GoBackCommand { get; }
@@ -74,8 +77,42 @@ namespace Birthdays.ViewModel
 
             else
             {
-                BirthdayList.Add(new BirthdayDate(_date, _name));
+                if (_id != 0)
+                { 
+                    _id = BirthdayList[BirthdayList.Count].Id;
+                }
+
+                _id++;
+                BirthdayList.Add(new BirthdayDate(_date, _name, _id));
                 Application.Current.MainPage.Navigation.PopAsync();
+
+                if (_date.Day % 4 == 0)
+                {
+                    isLeap = new TimeSpan(365, 0, 0, 0);
+                }
+
+                else
+                {
+                    isLeap = new TimeSpan(366, 0, 0, 0);
+                }
+
+                var notification = new NotificationRequest
+                {
+                    BadgeNumber = 1,
+                    Title = "Birthday!",
+                    Description = "Today " + _name + " birthday!",
+                    NotificationId = _id,
+                    Schedule =
+                    {
+                        NotifyTime = _date,
+                        NotifyRepeatInterval = isLeap,
+                        RepeatType = NotificationRepeat.TimeInterval
+                    }
+                };
+
+                NotificationCenter.Current.Show(notification);
+
+                Debug.WriteLine($"Added birthday with id:{_id}");
 
                 var documents = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
                 var filename = Path.Combine(documents, "BirthdaysFile.xml");

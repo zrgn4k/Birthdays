@@ -124,3 +124,5 @@
 /Users/zrgn4k/Documents/birthdaysgit/Birthdays.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 13 pro-15.2/_ProcessedBundleResourcesPath.items
 /Users/zrgn4k/Documents/birthdaysgit/Birthdays.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 13 pro-15.2/_ProcessedContentPath.items
 /Users/zrgn4k/Documents/birthdaysgit/Birthdays.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 13 pro-15.2/optimized/
+/Users/zrgn4k/Documents/birthdaysgit/Birthdays.iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/zrgn4k/Documents/birthdaysgit/Birthdays.iOS/bin/iPhoneSimulator/Debug/Plugin.LocalNotification.dll
